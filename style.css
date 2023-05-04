@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+.darkTheme {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+/*Header section*/
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  color: var(--secondary-color);
+  height: 73px;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+  top: 0;
+  background: var(--primary-color);
+}
+.headerContent {
+  width: 92.5%;
+  height: 73px;
+  margin-left: 48px;
+  display: flex;
+}
+
+.logo {
+  width: 10%;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.diffPages {
+  width: 50%;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diffPagesContent {
+  width: 80%;
+  display: flex;
+  margin-left: -93px;
+}
+.surf {
+  width: 20%;
+  height: 73px;
+  font-family: inherit;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.surf:hover {
+  border-bottom: 2px solid #00754a;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.specificSearch {
+  width: 30%;
+  height: 73px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specificSearch input {
+  width: 80%;
+  height: 40px;
+  border-radius: 20%;
+  border: 2px solid rgba(158, 156, 156, 0.2);
+  opacity: 0.7;
+  color: var(--secondary-color);
+}
+.user {
+  width: 10%;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+.user .userLogo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+#icon {
+  width: 32px;
+  height: 32px;
+  margin-top: 17px;
+  cursor: pointer;
+}
+
+/* Second Section ---- Know More */
+
+.knowMore {
+  width: 100%;
+  height: 80px;
+  background-color: #1e3932;
+  cursor: pointer;
+  margin-top: 73px;
+}
+
+.textAndButton {
+  width: 90%;
+  height: 80px;
+  margin-left: 48px;
+  display: inline-flex;
+}
+.textAndButton .text {
+  width: 70%;
+  height: 80px;
+}
+
+.textAndButton .text h5 {
+  float: left;
+  margin-top: 25px;
+  margin-left: 28px;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+}
+.textAndButton .button {
+  width: 30%;
+  height: 80px;
+}
+.textAndButton .button {
+  padding-top: 22px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: white;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1.5px solid white;
+}
+.btn:hover {
+  color: var(--primary-color);
+  background-color: #00754a;
+}
+
+/* Third Section ----- Handcrafted Coffee */
+
+.handcraftedCoffee {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 55px;
+  margin-top: -14px;
+  background-color: var(--primary-color);
+}
+
+.handcraftedCoffeeHeading {
+  font-weight: 800;
+  color: var(--secondary-color);
+  font-size: 26px;
+  margin-left: 77px;
+  margin-top: 15px;
+  padding-top: 37px;
+}
+.handcraftedCoffeeImages {
+  width: 89%;
+  height: 140px;
+  margin-left: 60px;
+  margin-top: 30px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.coldCoffee {
+  width: 108px;
+  height: 138px;
+
+  margin-left: 20px;
+}
+.imgCoffee {
+  width: 100%;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CoffeeText {
+  width: 100%;
+  height: 25px;
+}
+.coldCoffee img {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  border: 1px solid #edebe9;
+}
+.coldCoffee img:hover {
+  border: 2px solid rgb(8, 211, 8);
+  cursor: pointer;
+}
+h5 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+/* Fourth Section  */
+
+.recommends {
+  width: 100%;
+  margin-top: -55px;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  border-top: 1px groove rgb(241, 239, 239);
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox h2 {
+  color: var(--secondary-color);
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.content .textBox h2 span {
+  color: #017143;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.content .textBox p {
+  color: var(--secondary-color);
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #017143;
+  color: var(--primary-color);
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  margin-top: 50px;
+}
+
+.content .imgBox img {
+  max-width: 340px;
+}
+
+/*---- Footer Section---  */
+.footer {
+  margin-top: 0;
+  width: 100%;
+  background-color: #1e3932;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.footer .col h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 17px;
+  padding: 10px 0;
+  color: white;
+  text-transform: uppercase;
+}
+.footer .col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .col ul li {
+  color: white;
+  font-size: 12px;
+  padding: 5px 0px;
+}
+.address ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  cursor: pointer;
+  color: lightgray;
+  font-weight: bold;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .address {
+    width: 1000px;
+    display: block;
+  }
+  .address h2 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h2 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h2 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+#coupon {
+  border-radius: 2%;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  background: url("images/Hndcrft2.jpg");
+  background-repeat: no-repeat;
+  background-size: 600px 400px;
+  z-index: 100;
+  position: absolute;
+  margin-top: -99%;
+  margin-left: 26%;
+  visibility: hidden;
+  color: white;
+  box-shadow: 1px 1px rgb(214, 211, 211);
+}
+
+.couponBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: right;
+  margin-top: 2px;
+  margin-right: 2px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 24px;
+}
+
+#coupon h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 37px;
+  margin-top: -18px;
+  padding-left: 15px;
+}
+
+.couponRow {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 37px 154px;
+}
+
+#cpnCode {
+  border: 2px dashed #000000;
+  padding: 10px 20px;
+  border-right: 0;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+#cpnBtn {
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 10px 20px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.circle1,
+.circle2 {
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 41%;
+  transform: translate(-50%);
+}
+
+.circle1 {
+  left: 0;
+}
+
+.circle2 {
+  right: -49px;
+}
